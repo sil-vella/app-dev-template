@@ -4,6 +4,9 @@ echo "🚀 Starting web test with Puppeteer Chrome only..."
 echo "📝 Note: This will open ONE Chrome window (Puppeteer's) that runs the Flutter app"
 echo ""
 
+# Navigate to Flutter project root
+cd ../../
+
 # Build the Flutter web app first
 echo "🔨 Building Flutter web app..."
 flutter build web --web-renderer=html --dart-define=FLUTTER_WEB_USE_SKIA=false
@@ -54,13 +57,14 @@ fi
 echo "⏳ Giving server 3 seconds to fully initialize..."
 sleep 3
 
-# Run the web test
-echo "🧪 Running web test..."
+# Run the web tests using the test runner
+echo "🧪 Running web tests using test runner..."
 echo "🔍 Puppeteer will open Chrome and test the Flutter web app..."
-cd ../../test/web
-dart single_web_test.dart
 
-# Store the test exit code
+# Navigate to test directory and run all tests using the test runner
+echo "🚀 Starting test runner..."
+cd ../../test/web
+dart test_runner.dart
 TEST_EXIT_CODE=$?
 
 echo "🏁 Test completed with exit code: $TEST_EXIT_CODE"
@@ -71,13 +75,20 @@ echo "📱 Web server is still running with PID: $SERVER_PID"
 echo "🌐 App is available at: http://localhost:3000"
 echo "🛑 To stop the server, run: kill $SERVER_PID"
 echo ""
-echo "🧪 Test completed with exit code: $TEST_EXIT_CODE"
+echo "🧪 Tests completed with exit code: $TEST_EXIT_CODE"
 echo "📸 Screenshots saved in: test/web/"
 echo ""
 echo "💡 Single Chrome Window:"
 echo "   - Puppeteer opens Chrome with correct arguments"
 echo "   - Chrome loads the Flutter web app from localhost:3000"
 echo "   - Only one Chrome window is used"
+echo ""
+echo "🔧 Modular Testing System:"
+echo "   - Test runner executes multiple test files"
+echo "   - Each test file focuses on specific functionality"
+echo "   - Easy to add new test files in test_config.dart"
+echo "   - All tests run sequentially in the same browser session"
+echo "   - Comprehensive test reporting and error handling"
 
 # Exit with the test exit code
 exit $TEST_EXIT_CODE 
