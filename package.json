@@ -1,0 +1,24 @@
+{
+  "name": "flutter_base_05",
+  "version": "1.0.0",
+  "description": "A new Flutter base template.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:appium": "node test/appium_flutter_test.js",
+    "test:appium:simple": "node test/simple_appium_test.js",
+    "appium:start": "node test/start_appium.js",
+    "appium:test": "npm run appium:start & sleep 5 && npm run test:appium"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "appium-flutter-finder": "^0.0.32",
+    "webdriverio": "^8.32.5"
+  }
+} 

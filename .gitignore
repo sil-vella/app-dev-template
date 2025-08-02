@@ -1,0 +1,347 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.buildlog/
+.history
+.svn/
+migrate_working_dir/
+
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+# The .vscode folder contains launch configuration and tasks you configure in
+# VS Code which you may wish to be included in version control, so this line
+# is commented out by default.
+#.vscode/
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+**/build/
+
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# Android Studio will place build artifacts here
+**/android/app/debug
+**/android/app/profile
+**/android/app/release
+
+# iOS/XCode related
+**/ios/**/*.mode1v3
+**/ios/**/*.mode2v3
+**/ios/**/*.moved-aside
+**/ios/**/*.pbxuser
+**/ios/**/*.perspectivev3
+**/ios/**/*sync/
+**/ios/**/.sconsign.dblite
+**/ios/**/.tags*
+**/ios/**/.vagrant/
+**/ios/**/DerivedData/
+**/ios/**/Icon?
+**/ios/**/Pods/
+**/ios/**/.symlinks/
+**/ios/**/profile
+**/ios/**/xcuserdata
+**/ios/.generated/
+**/ios/Flutter/App.framework
+**/ios/Flutter/Flutter.framework
+**/ios/Flutter/Flutter.podspec
+**/ios/Flutter/Generated.xcconfig
+**/ios/Flutter/app.flx
+**/ios/Flutter/app.zip
+**/ios/Flutter/flutter_assets/
+**/ios/Flutter/flutter_export_environment.sh
+**/ios/ServiceDefinitions.json
+**/ios/Runner/GeneratedPluginRegistrant.*
+
+# macOS
+**/macos/Flutter/GeneratedPluginRegistrant.swift
+**/macos/Flutter/ephemeral
+
+# Coverage
+coverage/
+
+# Exceptions to above rules.
+!**/ios/**/default.mode1v3
+!**/ios/**/default.mode2v3
+!**/ios/**/default.pbxuser
+!**/ios/**/default.perspectivev3
+!/packages/flutter_tools/test/data/dart_dependencies_test/**/.packages
+
+# Flipper
+**/ios/Pods/Flipper*
+
+# Testing
+**/test/web/*.png
+**/test/web/single_test_*.png
+**/test/web/error_screenshot_*.png
+**/test/web/advanced_error_screenshot.png
+**/test/web/initial_state.png
+**/test/web/after_login_attempt.png
+
+# Chrome testing files (large files)
+**/.local-chrome/
+**/chrome-mac-x64/
+**/Google Chrome for Testing.app/
+
+# Build artifacts
+**/build/
+*.lock
+
+# Environment files
+.env
+.env.local
+.env.production
+
+# IDE
+.vscode/settings.json
+.vscode/launch.json
+
+# Logs
+*.log
+logs/
+**/tools/logger/*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# Python specific
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Python Flask
+instance/
+.webassets-cache
+
+# Python virtual environments
+**/python_base_04/venv/
+**/python_base_04/env/
+**/python_base_04/.env
+
+# Python logs
+**/python_base_04/tools/logger/*.log
+**/python_base_04/*.log
+
+# Python build artifacts
+**/python_base_04/build/
+**/python_base_04/dist/
+**/python_base_04/*.egg-info/
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+
+# Node.js (if any)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Virtual environment
+env/
+venv/
+ENV/
+.venv/
+ENV/
+
+# Django stuff:
+*.log
+staticfiles/
+local_settings.py
+
+# Flask/Django instance folder
+instance/
+.webassets-cache
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# pip and package managers
+*.lock
+pip-log.txt
+pip-delete-this-directory.txt
+Pipfile
+Pipfile.lock
+poetry.lock
+
+# Celery beat schedule file
+celerybeat-schedule
+celerybeat.pid
+
+# Sphinx documentation
+docs/_build/
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+
+# Mac OS X metadata
+.DS_Store
+
+# Environments
+.env
+.env.*
+/tmp/redis.conf
+
+# Logs
+*.log
+*.out
+*.err
+
+# VS Code
+.vscode/
+
+# IDE files
+.idea/
+
+# MyPy
+.mypy_cache/
+
+# Bandit
+.bandit/
+
+# Pytest Cache
+.pytest_cache/
+
+# App
+celebs_data/images/
+
+# Image files
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+*.tiff
+*.svg
+*.webp
+
+# Data directories
+db_data/
+redis_data/
+secrets/
+
+# Security and Credentials
+# SSH keys
+.ssh/
+*_key
+*_key.pub
+*.pem
+*.ppk
+
+# Certificates and keys
+*.crt
+*.cert
+*.p12
+*.pfx
+*.jks
+*.keystore
+*.truststore
+
+# Configuration files with sensitive data
+values.json
+**/values.json
+*wg0.conf
+
+# Vault credentials
+vault_creds/
+**/vault_creds/
+**/wireguard/values/
+**/wireguard/cleanup/
+k8s/vault/on_vps/vault-service-account.json
+
+# Kubernetes secrets
+*.kubeconfig
+kubeconfig
+k3s.yaml
+
+# Ansible sensitive files
+**/host_vars/**/vault.yml
+**/group_vars/**/vault.yml
+**/inventory.ini
+**/inventory/*.ini
+
+# Ansible logs and temporary files
+playbooks/*/logs/
+**/logs/
+**/notes/server_setup.md
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*~
+
+# VPS Backup files - don't commit actual backups
+backup/backups/
+*.tar.gz
+*.log
