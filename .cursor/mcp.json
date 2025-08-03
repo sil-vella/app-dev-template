@@ -1,1 +1,25 @@
-{"mcpServers":{"MCP_DOCKER":{"command":"docker","args":["mcp","gateway","run"]}}}
+{
+  "mcpServers": {
+    "MCP_DOCKER": {
+      "command": "docker",
+      "args": ["mcp", "gateway", "run"]
+    },
+    "MCP_PUPPETEER": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-puppeteer"],
+      "env": {
+        "PUPPETEER_LAUNCH_OPTIONS": "{ \"headless\": false, \"defaultViewport\": { \"width\": 1280, \"height\": 720 } }",
+        "ALLOW_DANGEROUS": "true"
+      }
+    },
+    "MCP_PUPPETEER_VISION": {
+      "command": "npx",
+      "args": ["-y", "puppeteer-vision-mcp-server"],
+      "env": {
+        "OPENAI_API_KEY": "your_openai_api_key_here",
+        "VISION_MODEL": "gpt-4o",
+        "DISABLE_HEADLESS": "true"
+      }
+    }
+  }
+}

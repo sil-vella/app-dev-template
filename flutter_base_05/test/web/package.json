@@ -1,0 +1,23 @@
+{
+  "name": "flutter-web-tests",
+  "version": "1.0.0",
+  "description": "Direct Puppeteer tests for Flutter web app",
+  "main": "puppeteer_direct_test.js",
+  "scripts": {
+    "test": "node puppeteer_direct_test.js",
+    "test:headless": "node puppeteer_direct_test.js --headless",
+    "install-deps": "npm install"
+  },
+  "dependencies": {
+    "puppeteer": "^21.0.0"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "puppeteer",
+    "testing",
+    "flutter",
+    "web"
+  ],
+  "author": "",
+  "license": "MIT"
+} 
